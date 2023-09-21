@@ -1,6 +1,15 @@
+import Presentation from "../components/Pesentation"
+import About from "../components/sections/About"
+import Menu from "../components/sections/Menu"
+
+
 function Home() {
     return(
-        <div>Home</div>
+        <>
+            <Presentation></Presentation>
+            <About></About>
+            <Menu></Menu>
+        </>
     )
 }
 

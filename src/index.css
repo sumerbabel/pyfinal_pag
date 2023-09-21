@@ -1,0 +1,205 @@
+body, input, button, textarea {
+  font-family: Karla, sans-serif;
+  font-size: 1.6rem;
+  outline: none;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+
+
+
+body {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.ui-principal-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  align-content: space-around;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ui-nav {
+  width: 100%;
+}
+
+.ui-ul {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  width: 100%;
+  list-style: none;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: space-between;
+}
+
+.ui-header {
+  max-width: 85rem;
+  width: 80rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out 0s;
+    align-self: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.ui-presentation{
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  height: auto;
+  width: 100%;
+  justify-content: space-around;
+  position: relative;
+}
+
+.ui-presentation::before{
+  content: '';
+  width: 100%;
+  height: 23rem;
+  background-color: rgb(73, 94, 87);
+  position: absolute;
+  z-index: -1;
+}
+
+.ui-image >img {
+  object-fit: cover;
+  width: 20rem;
+  height: 25.8rem;  
+  border-radius: 1.6rem;
+  z-index: 2;
+  margin-top: 2rem;
+}
+
+.ui-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.ui-button-y{
+  height: 5rem;
+  border-radius: 1.6rem;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border: none;
+  color: rgb(0, 0, 0);
+  background-color: rgb(244, 206, 20);
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 0px 1.3rem;
+  width: auto;
+}
+
+.ui-contend-presentarion{
+  display: flex;
+  flex-direction: row;
+  max-width: 85rem;
+  width: 80rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ui-title-presentacion{
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+  width: 100%;
+  height: 22rem;
+}
+
+.ui-title-contend {
+  max-width: 20rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.ui-title-presentatiion {
+  color: rgb(244, 206, 20);
+  font-size: 3rem;
+}
+
+.ui-subtitle-presentation {
+  color: white;
+  font-size: 2.6rem;
+  font-weight: 400;
+}
+
+
+.ui-text-presentation{
+  max-width: 27rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+
+
+h1, h2 {
+  font-family: "Markazi Text", serif;
+}
