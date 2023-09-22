@@ -1,24 +1,31 @@
 import ButtonYellow from "../ButtonYellow"
+import Card from "../Card"
 
-function About(){
+
+
+function About() {
     function handleClick(): void {
         throw new Error("Function not implemented.")
     }
 
-    return(
+    return (
 
-    <section className="ui-presentation">
-        <div className="ui-contend-presentarion">
-        <div className="ui-title-presentacion">
-            <div className="ui-title-contend">
-            <h1 className="ui-title-presentatiion">Little Lemon</h1>
-            <h2 className="ui-subtitle-presentation">Chicago</h2>
-            <p className="ui-text-presentation">We are family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-            <ButtonYellow ariaLabel="Go to reservation table page." name="Reserve a Table" onClick={handleClick}></ButtonYellow>
+        <section className="ui-presentation-two">
+            <div className="ui-contend-presentarion">
+
+                <div className="ui-title-contend-about">
+                    <h1>This weeks specials!</h1>
+                    <div style={{ width: '12rem' }}><ButtonYellow ariaLabel="Go to Online Menu page." name="Online Menu" onClick={handleClick}></ButtonYellow></div>
+
+                </div>
+                <div className="iu-card-container-about">
+                  <Card></Card>
+                  <Card></Card>
+                  <Card></Card>
+                </div>
+
             </div>
-        </div>
-        </div>
-    </section>
+        </section>
 
     )
 }

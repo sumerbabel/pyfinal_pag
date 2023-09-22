@@ -1,6 +1,7 @@
 import Presentation from "../components/Pesentation"
 import About from "../components/sections/About"
 import Menu from "../components/sections/Menu"
+import Testimonial from "../components/sections/Testimonial"
 
 
 function Home() {
@@ -8,6 +9,7 @@ function Home() {
         <>
             <Presentation></Presentation>
             <About></About>
+            <Testimonial></Testimonial>
             <Menu></Menu>
         </>
     )
