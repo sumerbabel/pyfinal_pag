@@ -1,7 +1,7 @@
 import ButtonYellow from "../ButtonYellow"
 import Card from "../Card"
 
-
+import image1 from "../../assets/bruchetta.svg"
 
 function About() {
     function handleClick(): void {
@@ -19,9 +19,15 @@ function About() {
 
                 </div>
                 <div className="iu-card-container-about">
-                  <Card></Card>
-                  <Card></Card>
-                  <Card></Card>
+                    <Card image={image1}
+                        text="   The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons."
+                        footerText="Order a delivery " ></Card>
+                    <Card image={image1}
+                        text="   The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons."
+                        footerText="Order a delivery " ></Card>
+                    <Card image={image1}
+                        text="   The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons."
+                        footerText="Order a delivery " ></Card>
                 </div>
 
             </div>
