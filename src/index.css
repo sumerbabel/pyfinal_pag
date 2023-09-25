@@ -398,12 +398,12 @@ h2 {
 }
 
 .ui-section-title h1 {
-  color :#495e57;
+  color: #495e57;
   font-size: 2.5rem;
 }
 
 .ui-section-title h2 {
-  color:#ee9972;
+  color: #ee9972;
   font-size: 2rem;
 }
 
@@ -460,12 +460,10 @@ h2 {
   position: relative;
   background-color: #495e57;
   color: white;
-  height:fit-content;
+  height: fit-content;
 }
 
-
-
-.ui-presentation-footer{
+.ui-presentation-footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -480,7 +478,7 @@ h2 {
   border-radius: 1rem;
 }
 
-.ui-item-footer{
+.ui-item-footer {
   display: flex;
   flex-direction: column;
   width: 10rem;
@@ -492,11 +490,61 @@ h2 {
 .ui-item-footer ul {
   display: flex;
   flex-direction: column;
-  
+
   gap: 2rem;
 }
 
-.ui-item-footer ul li a{
+.ui-item-footer ul li a {
   color: white;
   font-size: 1rem;
+}
+
+/*Reservation*/
+.ui-contend-reservation {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.ui-section-title-form {
+}
+
+.ui-section-form {
+  display: flex;
+  width: 30rem;
+}
+
+.ui-section-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.ui-section-form form  fieldset{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px white solid;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.ui-section-form form input , .ui-section-form form select {
+  display: flex;
+  border-radius: 0.5rem;
+  background-color: #e6ebe9;
+  height: 4.5rem;
+  color: rgb(73 94 87 / 80%);
+  border: 1px white solid;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 600;
 }

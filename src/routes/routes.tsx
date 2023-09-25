@@ -1,13 +1,13 @@
 /* eslint-disable react-refresh/only-export-components */
 import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
-import Default from "../pages/Default";
+import Reservation from "../pages/Reservation";
 
 export default function () {
   return (
     <Routes>
       <Route element={<Home />} path="/" />
-      <Route element={<Default />} path="/default" />
+      <Route element={<Reservation />} path="/reservation" />
       
     </Routes>
   )
