@@ -1,16 +1,17 @@
-import Presentation from "../components/Pesentation"
+
 import About from "../components/sections/About"
-import Menu from "../components/sections/Menu"
+import Hero from "../components/sections/Hero"
+import Highlights from "../components/sections/Highlights"
 import Testimonial from "../components/sections/Testimonial"
 
 
 function Home() {
     return(
         <>
-            <Presentation></Presentation>
-            <About></About>
+            <Hero></Hero>
+            <Highlights></Highlights>
             <Testimonial></Testimonial>
-            <Menu></Menu>
+            <About></About>
         </>
     )
 }

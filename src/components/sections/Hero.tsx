@@ -1,7 +1,7 @@
-import imageRestaurantFood from "../assets/restauranfood.jpg";
-import ButtonYellow from "./ButtonYellow";
+import imageRestaurantFood from "../../assets/restauranfood.jpg";
+import ButtonYellow from "../ButtonYellow";
 
-function Presentation() {
+function Hero() {
     const handleClick =() =>{
 console.log('clikrr')
     }
@@ -24,4 +24,4 @@ console.log('clikrr')
     )
 }
 
-export default Presentation
+export default Hero
