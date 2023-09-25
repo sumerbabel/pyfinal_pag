@@ -6,7 +6,7 @@ function Hero() {
 console.log('clikrr')
     }
     return (
-    <section className="ui-presentation">
+    <section className="ui-presentation" id="hero">
         <div className="ui-contend-presentarion">
         <div className="ui-title-presentacion">
             <div className="ui-title-contend">
@@ -16,10 +16,11 @@ console.log('clikrr')
             <ButtonYellow ariaLabel="Go to reservation table page." name="Reserve a Table" onClick={handleClick}></ButtonYellow>
             </div>
         </div>
-        <div className="ui-image">
+        <div className="ui-image" >
             <img src={imageRestaurantFood} alt="Restaurant Food" />
         </div>
         </div>
+      
     </section>
     )
 }

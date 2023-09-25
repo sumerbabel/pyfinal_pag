@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom"
+import { HashLink } from "react-router-hash-link";
 import logoLittleLemon from "../assets/Logo.svg"
 import basketIcon from "../assets/Basket.svg"
 
@@ -13,11 +14,11 @@ function Nav() {
             <ul className="ui-ul">
                 <li> <img src={logoLittleLemon} alt="Little Lemon Logo" /> </li>
                 <li><NavLink to="/" style={({ isActive }) => (styleActiveLink(isActive))}>Home</NavLink></li>
-                <li><NavLink to="/default" style={({ isActive }) => (styleActiveLink(isActive))}>About</NavLink></li>
-                <li><NavLink to="/default" style={({ isActive }) => (styleActiveLink(isActive))}>Menu</NavLink></li>
-                <li><NavLink to="/default" style={({ isActive }) => (styleActiveLink(isActive))}>Reservations</NavLink></li>
-                <li><NavLink to="/default" style={({ isActive }) => (styleActiveLink(isActive))}>Order Online</NavLink></li>
-                <li><NavLink to="/default" style={({ isActive }) => (styleActiveLink(isActive))}>Login</NavLink></li>
+                <li><HashLink to="/#about">About</HashLink></li>
+                <li><HashLink to="/#highlights">Menu</HashLink></li>
+                <li><HashLink to="/#testimonial">Reservations</HashLink></li>
+                <li><HashLink to="/#about">Order Online</HashLink></li>
+                <li><HashLink to="/#about">Login</HashLink></li>
                 <li> <img className="basketIcon" src={basketIcon} alt="Basket" /> </li>
             </ul>
         </nav>

@@ -2,7 +2,7 @@ import marioAdrianA from "../../assets/Mario_and_Adrian_A.jpg"
 import marioAdrianB from "../../assets/Mario_and_Adrian_b.jpg"
 function About() {
     return (
-        <section className="ui-presentation-about">
+        <section className="ui-presentation-about" id="about">
             <div className="ui-contend-about">
                 <section className="ui-section-title">
                         <h1>Little Lemon</h1>

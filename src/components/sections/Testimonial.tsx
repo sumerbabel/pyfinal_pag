@@ -3,7 +3,7 @@ import CardTestimonial from "../CardTestimonial"
 
 function Testimonial() {
     return (
-        <section className="ui-presentation-testimonial">
+        <section className="ui-presentation-testimonial" id="testimonial">
             <div className="ui-contend-presentarion">
                 <div className="ui-title-contend-testimonial">
                     <h2>What ours customers say!</h2>
