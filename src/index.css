@@ -542,7 +542,9 @@ h2 {
   font-weight: 600;
 }
 
-.ui-section-form form input,
+.ui-section-form form input[type=text],.ui-section-form form input[type=date],.ui-section-form form input[type=time], 
+.ui-section-form form input[type=password],
+.ui-section-form form input[type=number],
 .ui-section-form form select {
   display: flex;
   border-radius: 0.5rem;
@@ -573,4 +575,33 @@ h2 {
   padding-right: 1rem;
   font-weight: 600;
   font-size: 1.1rem;
+}
+
+.ui-field-group {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.ui-radio{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #e6ebe9;
+}
+
+input[type=radio] {
+
+  transform: scale(2.5);
+}
+
+.ui-back{
+  display: flex;
+  width: 100%;
+  
 }
