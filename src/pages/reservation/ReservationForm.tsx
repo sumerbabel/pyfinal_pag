@@ -2,6 +2,7 @@ import ButtonYellow from "../../components/ButtonYellow"
 import ButtonBase from "../../components/ButtonBase";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import { NavigateFunction, useNavigate } from "react-router-dom";
 export interface reserveProp {
     onClick?: () => void
     contactData?:any
@@ -9,6 +10,7 @@ export interface reserveProp {
 
 function ReservationForm({ onClick, contactData }: reserveProp) {
 
+    const navigate: NavigateFunction = useNavigate();
     const formik = useFormik({
         initialValues: {
             date: '',
@@ -21,7 +23,9 @@ function ReservationForm({ onClick, contactData }: reserveProp) {
             console.log('values FORMICK', values)
             const response: boolean = submitAPI(values);
             if (response) {
-                console.log(contactData)
+                console.log({contactData:contactData, reserve:values})
+                localStorage.setItem("dataRegister", JSON.stringify({contactData:contactData, reserve:values}));
+                navigate("/reservation/ReservationConfirmed");
             }
         },
         validationSchema: Yup.object({
@@ -114,7 +118,7 @@ function ReservationForm({ onClick, contactData }: reserveProp) {
 
                     </fieldset>
 
-                    <ButtonYellow ariaLabel="Make Your reservation" name="Make Your reservation"></ButtonYellow>
+                    <ButtonYellow ariaLabel="Make Your reservation" name="Make Your reservation" type="submit"></ButtonYellow>
 
                 </form>
             </section>

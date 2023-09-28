@@ -1,10 +1,15 @@
+import { NavigateFunction, useNavigate } from "react-router-dom";
 import imageRestaurantFood from "../../assets/restauranfood.jpg";
 import ButtonYellow from "../ButtonYellow";
 
 function Hero() {
+
+    const navigate: NavigateFunction = useNavigate();
+
     const handleClick =() =>{
-console.log('clikrr')
+        navigate("/reservation");
     }
+    
     return (
     <section className="ui-presentation" id="hero">
         <div className="ui-contend-presentarion">

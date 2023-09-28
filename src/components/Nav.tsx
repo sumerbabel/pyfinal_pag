@@ -17,8 +17,8 @@ function Nav() {
                 <li><HashLink to="/#about">About</HashLink></li>
                 <li><HashLink to="/#highlights">Menu</HashLink></li>
                 <li><HashLink to="/reservation">Reservations</HashLink></li>
-                <li><HashLink to="/#about">Order Online</HashLink></li>
-                <li><HashLink to="/#about">Login</HashLink></li>
+                <li><HashLink to="/">Order Online</HashLink></li>
+                <li><HashLink to="/">Login</HashLink></li>
                 <li> <img className="basketIcon" src={basketIcon} alt="Basket" /> </li>
             </ul>
         </nav>

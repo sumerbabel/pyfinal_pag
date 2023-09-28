@@ -1,4 +1,6 @@
-import image1 from "../../assets/bruchetta.svg"
+import image1 from "../../assets/p1.png"
+import image2 from "../../assets/p2.png"
+import image3 from "../../assets/p3.png"
 import CardTestimonial from "../CardTestimonial"
 
 function Testimonial() {
@@ -12,17 +14,17 @@ function Testimonial() {
                     <CardTestimonial image={image1}
                         text="   The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons."
                         stars="★★★☆☆"
-                        name="Jhonn"
+                        name="Anna"
                     ></CardTestimonial>
-                    <CardTestimonial image={image1}
+                    <CardTestimonial image={image2}
                         text="   The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons."
 
                         stars="★★★☆☆"
                         name="Dooer sd"
                     ></CardTestimonial>
-                    <CardTestimonial image={image1}
+                    <CardTestimonial image={image3}
                         text="   The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons."
-                        name='Hoptiks'
+                        name='Margaritta'
                         stars="★★★☆☆"
                     ></CardTestimonial>
                 </div>

@@ -2,6 +2,8 @@ import ButtonYellow from "../ButtonYellow"
 import Card from "../Card"
 
 import image1 from "../../assets/bruchetta.svg"
+import image2 from "../../assets/greeksalad.jpg"
+import image3 from "../../assets/lemondessert.jpg"
 
 function Highlights() {
     function handleClick(): void {
@@ -18,13 +20,13 @@ function Highlights() {
                     <div style={{ width: '12rem' }}><ButtonYellow ariaLabel="Go to Online Menu page." name="Online Menu" onClick={handleClick}></ButtonYellow></div>
                 </div>
                 <div className="iu-card-container-about">
-                    <Card image={image1}
+                    <Card image={image2}
                         text="   The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons."
                         footerText="Order a delivery " ></Card>
                     <Card image={image1}
                         text="   The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons."
                         footerText="Order a delivery " ></Card>
-                    <Card image={image1}
+                    <Card image={image3}
                         text="   The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons."
                         footerText="Order a delivery " ></Card>
                 </div>
