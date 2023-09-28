@@ -2,13 +2,13 @@
 interface propButton{
     name:string
     ariaLabel?:string
-    onClick:(event:unknown)=>void
+    onClick?:(event:unknown)=>void
 
 }
 function ButtonYellow({name, ariaLabel,onClick}:propButton){
 
     return(
-        <button className="ui-button-y" aria-label={ariaLabel} onClick={(event)=>onClick(event)} >{name}</button>
+        <button className="ui-button-y" aria-label={ariaLabel} onClick={(event)=>onClick && onClick(event)} >{name}</button>
     )
 }
 

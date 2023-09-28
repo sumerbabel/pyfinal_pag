@@ -603,5 +603,10 @@ input[type=radio] {
 .ui-back{
   display: flex;
   width: 100%;
-  
+}
+
+.ui-error-form {
+  color: red;
+  font-size: 1.1rem;
+  padding-left: 1rem;
 }
